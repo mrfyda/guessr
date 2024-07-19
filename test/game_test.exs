@@ -1,8 +1,8 @@
-defmodule GameTest do
+defmodule ConfigurationTest do
   use ExUnit.Case
-  doctest Game
+  doctest Configuration
 
-  test "greets the world" do
-    assert Game.hello() == :world
+  test "has songs defined" do
+    assert length(Configuration.songs_db()) > 0
   end
 end
